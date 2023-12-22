@@ -465,6 +465,7 @@ shape = SubResource("RectangleShape2D_bk4wf")
 
 [node name="player" parent="." instance=ExtResource("1_0xjdv")]
 position = Vector2(187, -1)
+SPEED = 20
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_dca08")

@@ -1,0 +1,90 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxsjx1qkkgn4t"]
+
+[ext_resource type="Theme" uid="uid://bq1v1uus7jjv0" path="res://Themes/main.tres" id="1_mfct1"]
+[ext_resource type="FontFile" uid="uid://c0qqnlynv4cim" path="res://Fonts/Rebellion.otf" id="2_owp5p"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_mfct1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_mfct1")
+color = Color(0, 0.85098, 0.65098, 1)
+
+[node name="Title" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_owp5p")
+theme_override_font_sizes/font_size = 22
+text = "Gary"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_owp5p")
+theme_override_font_sizes/font_size = 10
+text = "(C) 2023 All Rights Reserved to playit studios.inc"
+horizontal_alignment = 1
+
+[node name="control_buttons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Buttons to control various game actions
+"
+
+[node name="new_btn" type="Button" parent="control_buttons"]
+layout_mode = 2
+text = "New Game"
+
+[node name="resume_btn" type="Button" parent="control_buttons"]
+layout_mode = 2
+text = "Resume
+"
+
+[node name="settings_ btn" type="Button" parent="control_buttons"]
+layout_mode = 2
+text = "Settings
+"
+
+[node name="exit_btn" type="Button" parent="control_buttons"]
+layout_mode = 2
+text = "Exit
+"
