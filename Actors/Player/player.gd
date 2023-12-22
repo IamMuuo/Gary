@@ -8,7 +8,7 @@ enum Direction{
 var isLooking = Direction.LEFT
 
 @export var SPEED: int = 300.0
-const JUMP_VELOCITY = -400.0
+@export var JUMP_VELOCITY: float = -400.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity: int = ProjectSettings.get_setting("physics/2d/default_gravity")
