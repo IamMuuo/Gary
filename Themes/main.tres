@@ -1,4 +1,7 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bq1v1uus7jjv0"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bq1v1uus7jjv0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_euwt4"]
+bg_color = Color(0, 0.721569, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7f18p"]
 bg_color = Color(0, 0.721569, 1, 1)
@@ -9,6 +12,7 @@ border_width_bottom = 3
 border_color = Color(1, 1, 1, 1)
 
 [resource]
+AcceptDialog/styles/panel = SubResource("StyleBoxFlat_euwt4")
 Button/colors/font_color = Color(1, 1, 1, 1)
 Button/colors/font_disabled_color = Color(0.67451, 0.67451, 0.67451, 0.501961)
 Button/styles/normal = SubResource("StyleBoxFlat_7f18p")

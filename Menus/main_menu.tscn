@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxsjx1qkkgn4t"]
+[gd_scene load_steps=4 format=3 uid="uid://dxsjx1qkkgn4t"]
 
 [ext_resource type="Theme" uid="uid://bq1v1uus7jjv0" path="res://Themes/main.tres" id="1_mfct1"]
+[ext_resource type="Script" path="res://Menus/main_menu.gd" id="2_ldky8"]
 [ext_resource type="FontFile" uid="uid://c0qqnlynv4cim" path="res://Fonts/Rebellion.otf" id="2_owp5p"]
 
 [node name="MainMenu" type="Control"]
@@ -11,6 +12,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_mfct1")
+script = ExtResource("2_ldky8")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1

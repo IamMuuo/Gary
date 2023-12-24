@@ -15,7 +15,9 @@ config/description="Gary
 
 A Playit Studios Production
 Copyright 2023. No part of this production may be reproduced "
+config/tags=PackedStringArray("work_in_progress")
 run/main_scene="res://Menus/main_menu.tscn"
+config/auto_accept_quit=false
 config/features=PackedStringArray("4.2", "Forward Plus")
 run/flush_stdout_on_print=true
 run/max_fps=60
@@ -25,6 +27,10 @@ boot_splash/fullsize=false
 boot_splash/use_filter=false
 config/icon="res://Assets/Characters/tile_0000.png"
 boot_splash/minimum_display_time=1000
+
+[autoload]
+
+Exit="*res://crons/exit.gd"
 
 [display]
 

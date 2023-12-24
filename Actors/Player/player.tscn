@@ -40,5 +40,14 @@ shape = SubResource("CapsuleShape2D_m7mwn")
 
 [node name="anim_player" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_gka72")
-animation = &"walk"
-frame_progress = 0.761001
+animation = &"idle"
+frame_progress = 0.748474
+
+[node name="camera" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+limit_left = -100
+limit_top = -100
+limit_right = 1024
+limit_bottom = 768
+limit_smoothed = true
+position_smoothing_enabled = true
