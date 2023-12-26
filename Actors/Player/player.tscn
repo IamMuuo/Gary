@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://iand0uoywc25" path="res://Assets/Characters/tile_0001.png" id="3_8vmao"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m7mwn"]
+height = 22.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gka72"]
 animations = [{
@@ -45,9 +46,9 @@ frame_progress = 0.748474
 
 [node name="camera" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
-limit_left = -100
+limit_left = -10
 limit_top = -100
-limit_right = 1024
-limit_bottom = 768
+limit_right = 1380
+limit_bottom = 868
 limit_smoothed = true
 position_smoothing_enabled = true
